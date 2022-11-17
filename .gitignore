@@ -1,0 +1,7 @@
+checkpoint/
+output/
+data/
+script/
+
+*.pyc
+*.yaml

@@ -1,0 +1,11 @@
+numpy
+pandas
+fvcore
+pyyaml
+scikit-image
+scikit-learn
+scipy
+tensorboard
+timm==0.5.4
+torch
+torchvision
