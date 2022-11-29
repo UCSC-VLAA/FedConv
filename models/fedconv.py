@@ -8,7 +8,7 @@ import torch.nn.functional as F
 from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from timm.models.helpers import build_model_with_cfg, named_apply
 from timm.models.layers import DropBlock2d, DropPath, AvgPool2dSame, SelectAdaptivePool2d,create_classifier,trunc_normal_
-from .registry import register_model
+from timm.models.registry import register_model
 from .fx_features import register_notrace_module
 from collections import OrderedDict
 from .fewer_blocks import *
