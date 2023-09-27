@@ -1,6 +1,6 @@
 # Implement of FedConv
-* **Pytorch implementation for paper:** ["Designing Robust Convolution Neural Networks for Federated Learning"](arxiv:)
-* Note that we simulate Federated Learning in one local machine for research usage, donot involve real communication between different clients. 
+* **Pytorch implementation for paper:** ["FedConv: Enhancing Convolutional Neural Networks for Handling Data Heterogeneity in Federated Learning"](arxiv:)
+* Note that we simulate Federated Learning in one local machine for research usage, do not involve real communication between different clients. 
 
 ## Usage
 ### 0. Installation
@@ -24,7 +24,7 @@ We provide the data partitions for CIFAR-10, COVID-FL and iNaturalist datasets
 
 ### 2. Set (download) the Pretrained Models
 - We provide our models pretrained from Imagenet-1k
-    - FedConv-Base: https://drive.google.com/file/d/14GScKiSH2U74npwm_w-IxWm3p6n_RWJM/view?usp=share_link
+    - FedConv-Normal: https://drive.google.com/file/d/14GScKiSH2U74npwm_w-IxWm3p6n_RWJM/view?usp=share_link
     - FedConv-Invert: https://drive.google.com/file/d/1KvvEqt26-DlmemCNTPenwL8zLnXZarlD/view?usp=sharing
     - FedConv-InvertUp: https://drive.google.com/file/d/134djWPR2suK--sx7dDcqaUaOUnKbphFz/view?usp=sharing
 - Then put pretrained model under sub-folder checkpoint
