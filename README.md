@@ -13,20 +13,20 @@
 We provide the data partitions for CIFAR-10, COVID-FL and iNaturalist datasets 
 
 - CIFAR-10 dataset 
-    * Download the three sets of simulated data partitions from https://drive.google.com/file/d/1pgLA_J0SSCj6QFPhZWlWpsIzU7OcV30O/view?usp=sharing
+    * Download the three sets of simulated data partitions from [CIFAR-10](https://drive.google.com/file/d/17Dz0u1wRqWfN9yXptTsmTe3mL6fGgIQX/view?usp=sharing)
     * Put the downloaded cifar10.npy at sub-folder data 
     
 - COVID-FL dataset
     * Download the data and partitions file from https://drive.google.com/file/d/1Gmmkvpgxw2itaRETCBIpCLrL2QKpC5RS/view?usp=sharing
 
 - iNaturalist dataset
-    * Download the partition following instructions from FedScale: https://github.com/SymbioticLab/FedScale/tree/master/benchmark/dataset/inaturalist 
+    * Download the partition following instructions from [FedScale](https://github.com/SymbioticLab/FedScale/tree/master/benchmark/dataset/inaturalist)
 
 ### 2. Set (download) the Pretrained Models
 - We provide our models pretrained from Imagenet-1k
-    - FedConv-Normal: https://drive.google.com/file/d/14GScKiSH2U74npwm_w-IxWm3p6n_RWJM/view?usp=share_link
-    - FedConv-Invert: https://drive.google.com/file/d/1KvvEqt26-DlmemCNTPenwL8zLnXZarlD/view?usp=sharing
-    - FedConv-InvertUp: https://drive.google.com/file/d/134djWPR2suK--sx7dDcqaUaOUnKbphFz/view?usp=sharing
+    - [FedConv-Normal](https://drive.google.com/file/d/16sI242zjpM2grd_gmeeo4QkOEAfcRhDW/view?usp=sharing)
+    - [FedConv-Invert](https://drive.google.com/file/d/1mj53LsN2_a5dRW0hNEBaKt0kaGnfg0tT/view?usp=sharing)
+    - [FedConv-InvertUp](https://drive.google.com/file/d/1JIImj1r2wkgSj-a_y41ovkuh8SmkrBNf/view?usp=sharing)
 - Then put pretrained model under sub-folder checkpoint
 
 ### 3. Train Model
