@@ -17,7 +17,7 @@ We provide the data partitions for CIFAR-10, COVID-FL and iNaturalist datasets
     * Put the downloaded cifar10.npy at sub-folder data 
     
 - COVID-FL dataset
-    * Download the data and partitions file from https://drive.google.com/file/d/1Gmmkvpgxw2itaRETCBIpCLrL2QKpC5RS/view?usp=sharing
+    * Download the data and partitions file from [COVID-FL](https://drive.google.com/file/d/1BiG30JJ7U2BT0x92DjwfPeLb-uwTHdUV/view?usp=sharing)
 
 - iNaturalist dataset
     * Download the partition following instructions from [FedScale](https://github.com/SymbioticLab/FedScale/tree/master/benchmark/dataset/inaturalist)
