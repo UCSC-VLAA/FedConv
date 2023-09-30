@@ -44,10 +44,9 @@ def simple_accuracy(preds, labels):
     return (preds == labels).mean()
 
 
-def save_model(args, model):
+def save_model(args, model, epoch):  #save averaged model
     model_to_save = model.module if hasattr(model, 'module') else model
-    client_name = os.path.basename(args.single_client).split('.')[0]
-    model_checkpoint = os.path.join(args.output_dir, "%s_%s_checkpoint.bin" % (args.name, client_name))
+    model_checkpoint = os.path.join(args.output_dir, "%s_%s_checkpoint.pth.tar" % (args.name, epoch))
 
     torch.save(model_to_save.state_dict(), model_checkpoint)
     # print("Saved model checkpoint to [DIR: %s]", args.output_dir)
@@ -118,8 +117,6 @@ def valid(args, model, val_loader,  test_loader = None, TestFlag = False):
     print("Valid Loss: %2.5f" % eval_losses.avg, "Valid metric: %2.5f" % eval_result)
     
     if metric_evaluation(args, eval_result):
-        if args.save_model_flag:
-            save_model(args, model)
 
         args.best_acc[args.single_client] = eval_result
         args.best_eval_loss[args.single_client] = eval_losses.val

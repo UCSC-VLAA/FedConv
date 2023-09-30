@@ -12,7 +12,7 @@ import pickle
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 
 from utils.data_utils import DatasetFLViT, create_dataset_and_evalmetrix
-from utils.util import Partial_Client_Selection, valid, average_model, fix_seed
+from utils.util import Partial_Client_Selection, valid, average_model, fix_seed,save_model
 from utils.start_config import initization_configure, _worker_init
 from utils.scheduler import adjust_learning_rate
 
@@ -207,6 +207,9 @@ def train(args, model):
         args.record_test_acc = args.record_test_acc.append(args.current_test_acc, ignore_index=True)
         args.record_test_acc.to_csv(os.path.join(args.output_dir, 'test_acc.csv'))
 
+        if args.save_model_flag:
+            save_model(args, model_avg, epoch)
+
         #if args.global_step_per_client[proxy_single_client] >= args.t_total[proxy_single_client]:  #last
         if epoch >= args.max_communication_rounds-1 :
             break
@@ -280,12 +283,13 @@ def main():
                         help='How to apply mixup/cutmix params. Per "batch", "pair", or "elem"')
 
     #stochastic depth
-    parser.add_argument('--drop_path', type=float, default=0.1, metavar='PCT',
-                        help='Drop path rate (default: 0.1)')
+    parser.add_argument('--drop_path', type=float, default=0.1, metavar='PCT',help='Drop path rate')
     
+    #different fl methods
     parser.add_argument('--mu', default=None, type=float, help='mu for fedProx')
     parser.add_argument('--share', action='store_true', default=False, help='whether turn on share')
     parser.add_argument('--update_momentum', default=None, type=float, help='momentum for FedAvgM')
+    
     #save 
     parser.add_argument('--output_freq', type=int, default=10, help='')
     parser.add_argument("--save_model_flag",  action='store_true', default=False,  help="Save the best model for each client.")
