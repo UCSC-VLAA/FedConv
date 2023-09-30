@@ -14,7 +14,7 @@ from collections import OrderedDict
 from .fewer_blocks import *
 from torch import Tensor
 
-__all__ = ['fedconv_base','fedconv_invert','fedconv_invertup']  # model_registry will add each entrypoint fn to this
+__all__ = ['fedconv_normal','fedconv_invert','fedconv_invertup']  # model_registry will add each entrypoint fn to this
 
 
 def _cfg(url='', **kwargs):
@@ -273,9 +273,9 @@ def _create_resnet(variant, pretrained=False, **kwargs):
     
 
 @register_model
-def fedconv_base(pretrained=False, **kwargs):  
+def fedconv_normal(pretrained=False, **kwargs):  
     '''
-    FedConv-Base
+    FedConv-Normal
     '''
     model_args = dict(block=fedconv_block_nonnorm, layers=[3, 3, 5, 3], channels=[96, 192, 384, 768], 
                        act_layer=nn.SiLU(), kernel_size=9, 

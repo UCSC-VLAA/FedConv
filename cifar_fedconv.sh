@@ -7,4 +7,4 @@ python main.py --net_name fedconv_invertup \
 --lr 0.03 \
 --drop_path 0.1 \
 --agc 0.01 \
---Pretrained --pretrained_dir /home/cihangxie/rx/FL/checkpoint/fed_conv3_silu_k9_nonnorm_agc.pth.tar \
+--Pretrained --pretrained_dir path-to-pretrained-model \

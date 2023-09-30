@@ -2,7 +2,7 @@
 
 python main_select.py --net_name fedconv_invertup \
 --dataset inat --split_type real \
---data_path /data1/rx/inaturalist/ \
+--data_path path-to-dataset \
 --num_local_clients 25 \
 --max_communication_rounds 2000 \
 --gpu_ids 0 \
@@ -12,4 +12,4 @@ python main_select.py --net_name fedconv_invertup \
 --agc 0.01 \
 --batch_size 64 \
 --save_model_avg \
---Pretrained --pretrained_dir /home/cihangxie/rx/FL/checkpoint/fed_final.pth.tar
+--Pretrained --pretrained_dir path-to-pretrained-model
