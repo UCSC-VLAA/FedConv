@@ -3,7 +3,7 @@
 * Note that we simulate Federated Learning in one local machine for research usage, do not involve real communication between different clients.
 
 <div align="center">
-  <img src="fedconv_teaser"/>
+  <img src="fedconv_teaser.png"/>
 </div>
 
 ## Usage
