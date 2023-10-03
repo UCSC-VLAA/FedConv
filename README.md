@@ -51,5 +51,7 @@ We provide the data partitions for CIFAR-10, COVID-FL and iNaturalist datasets
 - Also refer to the ```main.py``` and ```main_select.py``` for more tags
 
 ## Acknowledgments
+- This work is supported by a gift from Open Philanthropy, TPU Research Cloud Program, and Google Cloud Research Credits program.
 - ResNet50, ViT, Swin-Transformer, and ConvNext implementations are based on https://github.com/rwightman/pytorch-image-models
 - Our code is based on https://github.com/Liangqiong/ViT-FL-main
+
