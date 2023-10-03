@@ -1,6 +1,10 @@
 # Implement of FedConv
 * **Pytorch implementation for paper:** ["FedConv: Enhancing Convolutional Neural Networks for Handling Data Heterogeneity in Federated Learning"](arxiv:)
-* Note that we simulate Federated Learning in one local machine for research usage, do not involve real communication between different clients. 
+* Note that we simulate Federated Learning in one local machine for research usage, do not involve real communication between different clients.
+
+<div align="center">
+  <img src="fedconv_teaser"/>
+</div>
 
 ## Usage
 ### 0. Installation
