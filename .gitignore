@@ -1,6 +1,4 @@
-checkpoint/
 output/
-data/
 script/
 
 *.pyc

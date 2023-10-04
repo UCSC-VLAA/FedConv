@@ -18,7 +18,7 @@ We provide the data partitions for CIFAR-10, COVID-FL and iNaturalist datasets
 
 - CIFAR-10 dataset 
     * Download the three sets of simulated data partitions from [CIFAR-10](https://drive.google.com/file/d/17Dz0u1wRqWfN9yXptTsmTe3mL6fGgIQX/view?usp=sharing)
-    * Put the downloaded cifar10.npy at sub-folder data 
+    * Put the downloaded cifar10.npy at sub-folder ```data ```
     
 - COVID-FL dataset
     * Download the data and partitions file from [COVID-FL](https://drive.google.com/file/d/1BiG30JJ7U2BT0x92DjwfPeLb-uwTHdUV/view?usp=sharing)
@@ -31,7 +31,7 @@ We provide the data partitions for CIFAR-10, COVID-FL and iNaturalist datasets
     - [FedConv-Normal](https://drive.google.com/file/d/16sI242zjpM2grd_gmeeo4QkOEAfcRhDW/view?usp=sharing)
     - [FedConv-Invert](https://drive.google.com/file/d/1mj53LsN2_a5dRW0hNEBaKt0kaGnfg0tT/view?usp=sharing)
     - [FedConv-InvertUp](https://drive.google.com/file/d/1JIImj1r2wkgSj-a_y41ovkuh8SmkrBNf/view?usp=sharing)
-- Then put pretrained model under sub-folder checkpoint
+- Then put pretrained model under sub-folder ```checkpoint```
 
 ### 3. Train Model
 - Use commands below to train models in different datasets
@@ -40,6 +40,12 @@ We provide the data partitions for CIFAR-10, COVID-FL and iNaturalist datasets
     - iNatualist: ```bash inat_fedconv.sh```
 
 - All the checkpoints, results, log files will be saved to the ```--output_dir``` folder, with the final performance saved at log_file.txt 
+
+### 4. Trained Models Checkpoint
+- We provide our models trained and validated in COVID-FL dataset
+    - [FedConv-Normal](https://drive.google.com/file/d/1p8BdYK9n8UlC8Cw6oShHr5CJElvLgPhU/view?usp=sharing)
+    - [FedConv-Invert](https://drive.google.com/file/d/1AaYKJB25Bfb_-ETARR3qTZlJI9a0rOZv/view?usp=sharing)
+    - [FedConv-InvertUp](https://drive.google.com/file/d/1A85XIQSTYikIhWU-J1k1ANKWR52KmblD/view?usp=sharing)
 
 ## Additional Notes
 - Some important tags for training setting:  
