@@ -1,6 +1,6 @@
-# Implement of FedConv
-* **Pytorch implementation for paper:** ["FedConv: Enhancing Convolutional Neural Networks for Handling Data Heterogeneity in Federated Learning"](arxiv:)
-* Note that we simulate Federated Learning in one local machine for research usage, do not involve real communication between different clients.
+# FedConv
+* **Pytorch implementation for paper:** [FedConv: Enhancing Convolutional Neural Networks for Handling Data Heterogeneity in Federated Learning](https://arxiv.org/abs/2310.04412)
+* Note that we simulate Federated Learning in one local machine for research usage, and do not involve real communication between different clients.
 
 <div align="center">
   <img src="fedconv_teaser.png"/>
@@ -14,7 +14,7 @@
 
 ### 1. Prepare Dataset 
 
-We provide the data partitions for CIFAR-10, COVID-FL and iNaturalist datasets 
+We provide the data partitions for CIFAR-10, COVID-FL, and iNaturalist datasets. 
 
 - CIFAR-10 dataset 
     * Download the three sets of simulated data partitions from [CIFAR-10](https://drive.google.com/file/d/17Dz0u1wRqWfN9yXptTsmTe3mL6fGgIQX/view?usp=sharing)
@@ -31,18 +31,18 @@ We provide the data partitions for CIFAR-10, COVID-FL and iNaturalist datasets
     - [FedConv-Normal](https://drive.google.com/file/d/16sI242zjpM2grd_gmeeo4QkOEAfcRhDW/view?usp=sharing)
     - [FedConv-Invert](https://drive.google.com/file/d/1mj53LsN2_a5dRW0hNEBaKt0kaGnfg0tT/view?usp=sharing)
     - [FedConv-InvertUp](https://drive.google.com/file/d/1JIImj1r2wkgSj-a_y41ovkuh8SmkrBNf/view?usp=sharing)
-- Then put pretrained model under sub-folder ```checkpoint```
+- Then put the pretrained model under the sub-folder ```checkpoint```
 
 ### 3. Train Model
-- Use commands below to train models in different datasets
+- Use the commands below to train models in different datasets
     - CIFAR-10: ```bash cifar_fedconv.sh```
     - COVID-FL: ```bash covid_fedconv.sh```
     - iNatualist: ```bash inat_fedconv.sh```
 
-- All the checkpoints, results, log files will be saved to the ```--output_dir``` folder, with the final performance saved at log_file.txt 
+- All the checkpoints, results, and log files will be saved to the ```--output_dir``` folder, with the final performance saved at log_file.txt 
 
 ### 4. Trained Models Checkpoint
-- We provide our models trained and validated in COVID-FL dataset
+- We provide our models trained and validated in the COVID-FL dataset
     - [FedConv-Normal](https://drive.google.com/file/d/1p8BdYK9n8UlC8Cw6oShHr5CJElvLgPhU/view?usp=sharing)
     - [FedConv-Invert](https://drive.google.com/file/d/1AaYKJB25Bfb_-ETARR3qTZlJI9a0rOZv/view?usp=sharing)
     - [FedConv-InvertUp](https://drive.google.com/file/d/1A85XIQSTYikIhWU-J1k1ANKWR52KmblD/view?usp=sharing)
@@ -64,4 +64,15 @@ We provide the data partitions for CIFAR-10, COVID-FL and iNaturalist datasets
 - This work is supported by a gift from Open Philanthropy, TPU Research Cloud Program, and Google Cloud Research Credits program.
 - ResNet50, ViT, Swin-Transformer, and ConvNext implementations are based on https://github.com/rwightman/pytorch-image-models
 - Our code is based on https://github.com/Liangqiong/ViT-FL-main
+
+## Citation
+
+```
+@article{xu2023fedconv,
+      title={FedConv: Enhancing Convolutional Neural Networks for Handling Data Heterogeneity in Federated Learning}, 
+      author={Peiran Xu and Zeyu Wang and Jieru Mei and Liangqiong Qu and Alan Yuille and Cihang Xie and Yuyin Zhou},
+      journal={arXiv preprint arXiv:2310.04412},
+      year={2023},
+}
+```
 
