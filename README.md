@@ -69,10 +69,10 @@ We provide the data partitions for CIFAR-10, COVID-FL, and iNaturalist datasets.
 
 ```
 @article{xu2023fedconv,
-      title={FedConv: Enhancing Convolutional Neural Networks for Handling Data Heterogeneity in Federated Learning}, 
-      author={Peiran Xu and Zeyu Wang and Jieru Mei and Liangqiong Qu and Alan Yuille and Cihang Xie and Yuyin Zhou},
-      journal={arXiv preprint arXiv:2310.04412},
-      year={2023},
+   title = {FedConv: Enhancing Convolutional Neural Networks for Handling Data Heterogeneity in Federated Learning},
+   author = {Xu, Peiran and Wang, Zeyu and Mei, Jieru and Qu, Liangqiong and Yuille, Alan and Xie, Cihang and Zhou, Yuyin},
+   journal = {TMLR},
+   year = {2023}
 }
 ```
 
